@@ -118,6 +118,27 @@ h1{
     margin-top:0;
 }
 
+
+.disabled-subject{
+    padding:24px;
+    color:#7E8791 !important;
+    font-size:21px;
+    font-weight:650;
+    border-right:1px solid #E8EDF1;
+    background:#F1F3F5;
+    cursor:not-allowed;
+}
+
+.disabled-desc{
+    padding:24px;
+    display:flex;
+    align-items:center;
+    color:#98A1AA;
+    line-height:1.5;
+    background:#F7F8F9;
+}
+
+
 @media(max-width:900px){
     .row{
         grid-template-columns:1fr;
@@ -174,13 +195,13 @@ Preserved original ATPL content with improved module structure and navigation.
 <div class="module-header m2">Module 2</div>
 
 <div class="row">
-<a class="subject" href="instrumentation.html">Instrumentation</a>
-<div class="desc">Original instrumentation subject content preserved.</div>
+<div class="disabled-subject">Instrumentation</div>
+<div class="disabled-desc">Module visible but detailed content integration still in development.</div>
 </div>
 
 <div class="row">
-<a class="subject" href="tools.html">ATPL Tools</a>
-<div class="desc">Original calculators and operational tools preserved.</div>
+<div class="disabled-subject">Flight Planning & Monitoring / Communications</div>
+<div class="disabled-desc">Communications and flight planning expansion pending.</div>
 </div>
 
 </div>
@@ -189,13 +210,19 @@ Preserved original ATPL content with improved module structure and navigation.
 <div class="module-header m3">Module 3</div>
 
 <div class="row">
-<a class="subject" href="nav.html">General Navigation</a>
-<div class="desc">Original navigation content and theory preserved.</div>
+<div class="disabled-subject">AGK - Airframes & Systems, Electrics and Powerplant</div>
+<div class="disabled-desc">Aircraft systems and powerplant module still in development.</div>
+</div>
+
+
+<div class="row">
+<div class="disabled-subject">General Navigation</div>
+<div class="disabled-desc">Module visible but advanced navigation integration pending.</div>
 </div>
 
 <div class="row">
-<a class="subject" href="law.html">Air Law</a>
-<div class="desc">Original air law content preserved.</div>
+<div class="disabled-subject">Air Law & ATC Procedures / Operational Procedures</div>
+<div class="disabled-desc">Operational procedures integration still in development.</div>
 </div>
 
 </div>
