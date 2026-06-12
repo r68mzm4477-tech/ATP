@@ -14,9 +14,9 @@
     --text:#1E2A35;
     --muted:#66727F;
 
-    --module1:#7A5C5A;
-    --module2:#8D8265;
-    --module3:#5E7468;
+    --module1:#6E5A5A;
+    --module2:#7F765F;
+    --module3:#5E7168;
 
     --header:#344452;
 }
@@ -39,13 +39,12 @@ body{
 h1{
     margin:0 0 10px 0;
     font-size:38px;
-    font-weight:700;
     color:var(--header);
 }
 
 .subtitle{
     color:var(--muted);
-    margin-bottom:36px;
+    margin-bottom:34px;
 }
 
 .module{
@@ -59,9 +58,9 @@ h1{
 
 .module-header{
     padding:18px 24px;
+    color:white;
     font-size:24px;
     font-weight:700;
-    color:white;
 }
 
 .m1{background:var(--module1);}
@@ -70,8 +69,8 @@ h1{
 
 .row{
     display:grid;
-    grid-template-columns:1.1fr 1fr;
-    border-top:1px solid #E7ECF0;
+    grid-template-columns:1fr 1fr;
+    border-top:1px solid #E8EDF1;
 }
 
 .subject{
@@ -80,7 +79,7 @@ h1{
     color:var(--text);
     font-size:21px;
     font-weight:650;
-    border-right:1px solid #E7ECF0;
+    border-right:1px solid #E8EDF1;
 }
 
 .subject:hover{
@@ -95,10 +94,8 @@ h1{
     line-height:1.5;
 }
 
-.tools-title{
-    margin:42px 0 18px 0;
-    font-size:28px;
-    color:var(--header);
+.tools{
+    margin-top:40px;
 }
 
 .tools-grid{
@@ -108,7 +105,7 @@ h1{
 }
 
 .tool{
-    background:var(--card);
+    background:white;
     border:1px solid var(--border);
     border-radius:16px;
     padding:22px;
@@ -117,21 +114,30 @@ h1{
     box-shadow:0 6px 18px rgba(20,30,40,0.05);
 }
 
-.tool h3{margin-top:0;}
+.tool h3{
+    margin-top:0;
+}
 
-@media (max-width:900px){
-    .row{grid-template-columns:1fr;}
-    .subject{border-right:none;border-bottom:1px solid #E7ECF0;}
+@media(max-width:900px){
+    .row{
+        grid-template-columns:1fr;
+    }
+
+    .subject{
+        border-right:none;
+        border-bottom:1px solid #E8EDF1;
+    }
 }
 </style>
 </head>
 
 <body>
+
 <div class="container">
 
 <h1>EASA ATPL Training Platform</h1>
 <div class="subtitle">
-Structured ATPL modules with integrated study tools and EASA-aligned subjects.
+Preserved original ATPL content with improved module structure and navigation.
 </div>
 
 <div class="module">
@@ -139,47 +145,44 @@ Structured ATPL modules with integrated study tools and EASA-aligned subjects.
 
 <div class="row">
 <a class="subject" href="met.html">Meteorology</a>
-<div class="desc">Atmosphere, fronts, icing, turbulence and operational weather.</div>
+<div class="desc">Original meteorology content and chapter structure preserved.</div>
 </div>
 
 <div class="row">
-<a class="subject" href="massbalance.html">Mass & Balance</a>
-<div class="desc">Centre of gravity, loading and balance calculations.</div>
+<a class="subject" href="mb.html">Mass & Balance</a>
+<div class="desc">Original mass and balance content preserved.</div>
 </div>
 
 <div class="row">
 <a class="subject" href="pof.html">Principles of Flight</a>
-<div class="desc">Lift, drag, stability, Mach effects and aircraft behaviour.</div>
+<div class="desc">Original aerodynamics and POF content preserved.</div>
 </div>
 
 <div class="row">
-<a class="subject" href="humanperformance.html">Human Performance</a>
-<div class="desc">Fatigue, hypoxia, CRM, stress and operational physiology.</div>
+<a class="subject" href="hp.html">Human Performance</a>
+<div class="desc">Original human performance content preserved.</div>
 </div>
 
 <div class="row">
 <a class="subject" href="perf.html">Aircraft Performance</a>
-<div class="desc">Runway performance, density altitude and exam-focused calculations.</div>
+<div class="desc">Original aircraft performance content preserved.</div>
 </div>
+
 </div>
 
 <div class="module">
 <div class="module-header m2">Module 2</div>
 
 <div class="row">
-<a class="subject" href="radionav.html">Radio Navigation</a>
-<div class="desc">VOR, DME, NDB and ILS procedures.</div>
-</div>
-
-<div class="row">
 <a class="subject" href="instrumentation.html">Instrumentation</a>
-<div class="desc">Pitot-static systems, gyros and aircraft instruments.</div>
+<div class="desc">Original instrumentation subject content preserved.</div>
 </div>
 
 <div class="row">
-<a class="subject" href="flightplanning.html">Flight Planning & Communications</a>
-<div class="desc">Fuel planning, reserves and communications foundations.</div>
+<a class="subject" href="tools.html">ATPL Tools</a>
+<div class="desc">Original calculators and operational tools preserved.</div>
 </div>
+
 </div>
 
 <div class="module">
@@ -187,41 +190,36 @@ Structured ATPL modules with integrated study tools and EASA-aligned subjects.
 
 <div class="row">
 <a class="subject" href="nav.html">General Navigation</a>
-<div class="desc">Charts, wind triangles and Earth geometry.</div>
+<div class="desc">Original navigation content and theory preserved.</div>
 </div>
 
 <div class="row">
-<a class="subject" href="agk.html">AGK – Airframes & Systems</a>
-<div class="desc">Aircraft systems, electrics, hydraulics and powerplant.</div>
+<a class="subject" href="law.html">Air Law</a>
+<div class="desc">Original air law content preserved.</div>
 </div>
 
-<div class="row">
-<a class="subject" href="lawops.html">Air Law & Operational Procedures</a>
-<div class="desc">ICAO, ATC, CRM and operational regulations.</div>
-</div>
 </div>
 
-<h2 class="tools-title">Study Tools</h2>
+<div class="tools">
+<h2>Additional Study Tools</h2>
 
 <div class="tools-grid">
 
-<a class="tool" href="tools.html">
-<h3>ATPL Tools</h3>
-<p>Original tools section and operational calculators.</p>
+<a class="tool" href="ADVANCED_UPGRADE.md">
+<h3>Advanced Upgrade Notes</h3>
+<p>Review additional ATPL expansion notes and development plans.</p>
 </a>
 
-<a class="tool" href="planner.html">
-<h3>Study Planner</h3>
-<p>Track study goals and revision structure.</p>
-</a>
-
-<a class="tool" href="lo-mapping.html">
-<h3>LO Mapping</h3>
-<p>EASA learning objective and syllabus tracking.</p>
+<a class="tool" href="ENHANCEMENTS.md">
+<h3>Enhancement Notes</h3>
+<p>Review implemented platform enhancements and additions.</p>
 </a>
 
 </div>
 
 </div>
+
+</div>
+
 </body>
 </html>
